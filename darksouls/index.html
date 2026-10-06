@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Souls - Página Inicial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu de navegação -->
+  <header>
+    <nav class="menu">
+      <span class="logo">DARK SOULS</span>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="menu-lista" id="menu-lista">
+        <li><a href="index.html" class="ativo">Início</a></li>
+        <li><a href="ds1.html">Dark Souls 1</a></li>
+        <li><a href="ds2.html">Dark Souls 2</a></li>
+        <li><a href="ds3.html">Dark Souls 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="banner">
+    <img src="img/anorlondo.jpg" alt="Fogueira (bonfire) com espada cravada">
+    <div class="banner-texto">
+      <h1>A História dos Dark Souls</h1>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <h2>Escolha qual história deseja explorar</h2>
+    <p>Clique em uma das imagens abaixo para ver os detalhes e a história de cada jogo.</p>
+
+    <!-- Links em imagem para as páginas dos jogos -->
+    <div class="cards">
+      <div class="card">
+        <a href="ds1.html">
+          <img src="img/ds1.jpg" alt="Cavaleiro nas ruínas de Lordran">
+        </a>
+        <h3>Dark Souls 1</h3>
+        <p>O original de 2011. Explore o reino de Lordran e descubra a maldição dos mortos-vivos.</p>
+        <a href="ds1.html" class="botao">Ver detalhes</a>
+      </div>
+
+      <div class="card">
+        <a href="ds2.html">
+          <img src="img/ds2.jpg" alt="Cavaleiro observando o reino de Drangleic">
+        </a>
+        <h3>Dark Souls 2</h3>
+        <p>Lançado em 2014. Viaje por Drangleic em busca de uma cura para a maldição.</p>
+        <a href="ds2.html" class="botao">Ver detalhes</a>
+      </div>
+
+      <div class="card">
+        <a href="ds3.html">
+          <img src="img/ds3.jpg" alt="Cavaleiro diante da catedral em chamas de Lothric">
+        </a>
+        <h3>Dark Souls 3</h3>
+        <p>O encerramento da trilogia em 2016. Traga os Lordes de Cinza de volta aos tronos.</p>
+        <a href="ds3.html" class="botao">Ver detalhes</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Tabela comparativa dos jogos -->
+    <h2>Comparação dos jogos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Jogo</th>
+          <th>Ano</th>
+          <th>Reino</th>
+          <th>Chefes principais</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dark Souls 1</td>
+          <td>2011</td>
+          <td>Lordran</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>Dark Souls 2</td>
+          <td>2014</td>
+          <td>Drangleic</td>
+          <td>41</td>
+        </tr>
+        <tr>
+          <td>Dark Souls 3</td>
+          <td>2016</td>
+          <td>Lothric</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Formulário de cadastro -->
+    <h2>Cadastro de jogador</h2>
+    <p>Preencha o formulário abaixo para receber mais informações sobre os futuros jogos da FromSoftware.</p>
+
+    <form id="form-cadastro" novalidate>
+      <div class="campo">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Solaire de Astora">
+        <span class="erro" id="erro-nome"></span>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" placeholder="Ex: solaire@astora.com">
+        <span class="erro" id="erro-email"></span>
+      </div>
+
+      <div class="campo">
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="text" id="nascimento" name="nascimento" placeholder="DD/MM/AAAA" maxlength="10">
+        <span class="erro" id="erro-nascimento"></span>
+      </div>
+
+      <button type="submit" class="botao">Enviar cadastro</button>
+      <p class="sucesso" id="msg-sucesso"></p>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>Programação para internet - 2026 Prof(a) Luciene Chagas de Oliveira &mdash;</p>
+    <p>Feito por: Platão Leonel de Souza Junior / Luccas Henrique Viana / Marcos Eduardo Fernandes</p>
+    <p>Visite o site oficial: <a href="https://www.bandainamcoent.com/games/dark-souls" target="_blank">Bandai Namco - Dark Souls</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
