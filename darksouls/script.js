@@ -1,4 +1,3 @@
-// Menu mobile
 var menuToggle = document.getElementById('menu-toggle');
 var menuLista = document.getElementById('menu-lista');
 
@@ -31,7 +30,7 @@ botoesFiltro.forEach(function (botao) {
   });
 });
 
-// Máscara de data (DD/MM/AAAA) ----------
+// Máscara de data (DD/MM/AAAA)
 var campoData = document.getElementById('nascimento');
 
 if (campoData) {
@@ -106,7 +105,7 @@ if (formulario) {
       }
     }
 
-    // Se tudo estiver correto, mostra a mensagem de sucesso
+    // Se tudo estiver correto mostra a mensagem de sucesso
     if (valido) {
       document.getElementById('msg-sucesso').textContent =
         'Cadastro enviado com sucesso! Praised the sun, ' + nome + '!';
